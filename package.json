@@ -1,0 +1,35 @@
+{
+  "name": "image-service",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "author": "Bartosz Kostrowiecki <bartosz.kostrowiecki@gmail.com>",
+  "devDependencies": {
+    "@types/glob": "^7.1.1",
+    "@types/jest": "^23.3.13",
+    "@types/node": "^10.12.18",
+    "@types/sharp": "^0.21.1",
+    "@types/uuid": "^3.4.4",
+    "jest": "^23.6.0",
+    "rimraf": "^2.6.3",
+    "ts-jest": "^23.10.5",
+    "typescript": "^3.2.4"
+  },
+  "peerDependencies": {
+    "@types/node": "^10.12.18",
+    "node": "^11.7.0"
+  },
+  "dependencies": {
+    "glob": "^7.1.3",
+    "sharp": "^0.21.3",
+    "typed-promisify": "^0.4.0",
+    "uuid": "^3.3.2"
+  },
+  "scripts": {
+    "build": "rimraf dist/ && tsc",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git"
+  }
+}
